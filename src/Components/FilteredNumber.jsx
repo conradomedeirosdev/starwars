@@ -33,7 +33,6 @@ const FilteredNumber = () => {
   const [select, setSelect] = useState('');
   const { data, fetchStarWars, setNewData } = useContext(StarWarsContext);
 
-  // console.log('data table', data);
   fetchStarWars();
 
   return (

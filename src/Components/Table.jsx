@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import StarWarsContext from "../Context/StarWarsContext";
 
-const headOfTag = data => {
+const headOfTag = (data) => {
   return data.map(planets => {
     return Object.keys(planets).filter(tag => {
       return tag !== "residents";
@@ -9,7 +9,7 @@ const headOfTag = data => {
   })[0];
 };
 
-const bodyOfTag = data => {
+const bodyOfTag = (data) => {
   return data.map(planets => {
     return Object.values(planets).filter((value, index) => {
       return index !== 9;
@@ -18,7 +18,6 @@ const bodyOfTag = data => {
 };
 
 const bodyTable = (data, filterText) => {
-  // console.log(data);
   return bodyOfTag(data).map(planet => {
     if (planet[0].includes(filterText)) {
       return (
@@ -52,13 +51,6 @@ const Table = () => {
     StarWarsContext
   );
   fetchStarWars();
-
-  // const newDataTable = () => {
-  //   if (newData !== []) {
-  //     return data === newData;
-  //   }
-  // };
-  // newDataTable();
 
   if (!data.sucess) {
     return <div>Loading...</div>;
