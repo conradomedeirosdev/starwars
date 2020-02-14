@@ -1,6 +1,6 @@
 {
-  "homepage": "http://github.com/conradomedeirosdev/starwars",
-  "name": "sd-01-week18-react-context-hooks-starwars-datatable-filters",
+  "homepage": "http://conradomedeirosdev.github.io/starwars",
+  "name": "starwars",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
